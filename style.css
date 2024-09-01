@@ -1,0 +1,1281 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,600;1,800&display=swap');
+
+
+
+* {
+margin:0;
+padding: 0;
+border: 0;
+list-style: none;
+text-decoration: none;
+box-sizing: border-box;
+
+}
+
+
+/* MAIN BODY (STYLE) */
+body {
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 1.6;
+    color: black;
+    overflow-x: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('wallhaven-k7l81m.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    width: 74%;
+    max-width: 1800px;
+    margin-inline: auto;
+}
+
+.section{
+    margin-top: 3rem;
+    width:100vw;
+}
+
+h1, h2, h3, h4, h5{
+    color:white;
+    line-height: 1.3;
+
+}
+
+h1{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+h2{
+    font-size: 1.7rem;
+    margin: 1rem 0;
+}
+
+h3{
+    font-size: 1.1rem;
+}
+
+h4{
+    font-size: 1rem;
+}
+
+
+a{
+    color: white;
+    transition: 300ms;
+}
+
+p{
+    color: white;
+    font-size: 1rem;
+    font-weight: 100;
+}
+img{
+    display: block;
+    width: 100%;    
+    object-fit: cover;
+}
+
+span{
+    color: rgb(168, 80, 255); ;
+    font-size: 1.7rem;
+    font-weight: 600;
+    font-style: italic;
+}
+
+nav{
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(187, 187, 187, 0.061)), url('wallhaven-k7l81m.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 100vw;
+    height: 4.5rem;
+    top: 0;
+    z-index: 10;
+}
+
+nav button{
+    display: none;
+}
+
+.navbar-container  {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+.avatar{
+    width: 2.5rem;
+    height: 2.5rem;
+    overflow: hidden;
+ 
+}
+
+.logo{
+    font-weight: 600;
+    font-size: 1.7rem;
+    font-style: italic;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.nav-profilepic{
+    position: relative;
+    cursor: pointer;
+}   
+
+.nav-profilepic ul{
+    position: absolute;
+    top: 140%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.4);
+    visibility: hidden;
+    opacity: 0;
+    transition: 300ms;
+}
+
+
+.nav-profilepic:hover > ul{
+    visibility: visible;
+    opacity: 1;
+
+}
+
+
+.nav-profilepic ul li a{
+    padding:  1rem;
+    display: block;
+    width: 100%;
+    background: white;
+    color: black;
+
+
+}
+
+
+.nav-profilepic ul li:last-child a {
+background: rgb(255, 2, 70);
+font-weight: bold;
+}
+
+
+/* Project Section */
+
+
+
+.project-type{
+    background: rebeccapurple;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+
+.project-type:hover{
+    color: black;
+   
+}
+
+
+/* Project Information */
+
+.projects-image{
+    border-radius: 0 2rem;
+    border: 0.3rem solid rebeccapurple; 
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+   
+    
+}
+
+.project-image{
+    border-radius: 0 2rem;
+    border: 0.3rem solid rebeccapurple; 
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+   
+    
+}
+
+
+
+.project:hover .projects-image img{
+    filter: saturate(0);
+    transition:  500ms ease;
+}
+
+
+.project-user{
+    display: flex;
+    gap:1rem;
+    margin-top: 1.2rem;
+    
+}
+
+
+.project-user-icon{
+    width:2.8rem;
+    height: 2.8rem;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+
+.project-user-info small{
+    color: white;
+    font-size: 0.85em;
+    font-weight: 100;
+   margin-bottom: 1.5rem;
+}
+
+
+/* Main Project (Homepage) */
+
+
+.main-project{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+
+}
+
+
+.project-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+
+.main-project .projects-image{
+    height: fit-content;
+}
+
+
+.main-project .project-image{
+    height: fit-content;
+}
+
+
+
+
+/* All project (SearchBar) section */
+
+
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5rem;
+    margin-bottom: 5rem;
+}
+
+.project-title{
+        margin-top: 1.3rem;
+        margin-bottom: 0.6rem;
+        font-weight: bolder;
+}
+
+
+
+
+
+
+
+/* Footer Section */
+
+footer{
+   background: rgb(255, 255, 255);
+   padding: 2.3rem 0 0;
+    background-color: #222;
+    color: white;
+  
+  }
+
+
+.project-details-footer{
+    margin-top: 10rem;
+  }
+
+.socials-icons{
+    margin-inline: auto;
+    width: fit-content;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.socials-icons a{
+    background: rebeccapurple; 
+    border-radius: 10%;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.socials-icons a:hover{
+    background: rgb(75, 28, 121);  
+    color: #ffffff;
+}
+  
+  
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-bottom: 1.2rem;
+    gap: 1rem;
+    
+}
+
+
+.footer-container h4{
+    color: white;
+    margin-bottom: 0.6rem;
+}
+
+
+footer ul li{
+    padding: 0.4rem 0;
+}
+
+footer ul a{
+    opacity: 0.5;
+}
+
+.footer-text{
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 0.2rem 0;
+}
+
+.footer-text small{
+    font-size: 0.9rem;
+}
+
+.footer-container{
+    opacity: 0.5;
+}
+
+.footer-container p{
+    font-size: 1rem;
+}
+
+footer ul a:hover {
+    opacity: 10;
+    color: rgb(255, 255, 255);
+}
+
+
+/* Search Bar Section */
+
+
+.search-bar-section{
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+}
+
+.search-bar-container{
+    position: relative;
+    width: 30rem;
+    background: rgba(255, 255, 255, 0.078) ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    color: grey;
+}
+
+
+
+.search-bar-container > div {
+    width:  90%;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar-section input {
+    background: transparent;
+    margin-left: 0.7rem;
+    padding: 0.5rem 0;
+    width: 100%;
+    color: white;
+    font-size: 1rem;
+}
+
+
+.search-bar-section input::placeholder{
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.btn{
+    display: inline-block;
+    width: fit-content;
+    padding: 0.6rem 1.2rem;
+    background-color: rgb(137, 73, 201); 
+    border-radius: 1.2rem;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    
+}
+
+
+
+/* Project Details Section */
+
+.project-detail {
+    margin: 3rem 0 2rem;
+}
+
+.project-detail-container{
+    width: 50%;
+    background: rgba(0, 0, 0, 0.238);
+    padding: 1rem 1.5rem 2rem;
+    border-radius: 0.8rem;
+
+}
+
+
+.project-detail-image img{
+    border-radius: 0.9rem;
+    border: rgb(0, 0, 0) 0.2rem solid;
+    margin-top: 0.5rem;
+    width: 100%;
+    padding: 0;
+}
+
+.project-detail-container p {
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+
+
+.project-detail-container h2{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+
+/* Contact Us page  */
+
+.contact-us{
+    height:  70vh;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    background-color: black;
+    padding: 1rem;
+}
+
+
+
+
+/* About Us Page */
+.about-us-section {
+    padding: 3rem 5rem 6rem 5rem;
+    margin: 3rem 20rem 5rem 20rem;
+    background-color: #4a4a4a5d;
+    border-radius: 1.5rem;
+    border:  2px solid;
+  }
+
+  
+.about-us-title {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    
+}
+
+.about-titles{
+    color: #9d00ff;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 3rem;
+}
+
+.about-title{
+    color: #9d00ff;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.about-us-title h1{
+    font-size: 3rem;
+    
+}
+
+.about-us-information {
+    width: 50%;
+}
+
+
+
+
+/* Sign up/LogIn Section  */
+
+.form-section {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+
+.form-section-container{
+    width:40%;
+    margin-top: 1.2rem;
+}
+
+
+.alert-messages{
+ padding: 0.8em 0.8rem;
+    margin-bottom: 17rem;
+	margin-top:17rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.alert-messages.error-message {
+    background: #aa012858;
+}
+
+
+.alert-messages.error p {
+    color: #ff0000;
+}
+
+
+
+
+
+
+
+.alert-message {
+    padding: 0.4em 0.4rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.alert-message.error-message {
+    background: #aa012858;
+}
+
+
+.alert-message.error p {
+    color: #ff0000;
+}
+
+
+.alert-message.sucess-message  {
+    background: #01aa0f5d;
+}
+
+
+.alert-message.sucess p {
+    color: rgb(1, 193, 1);
+}
+
+
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: rgba(0, 0, 0, 0.361);
+    padding: 2rem 2rem 2rem;
+    border-radius: 0.8rem;
+    margin-bottom: 5rem;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.form-section  h2 {
+   font-weight: bold;
+   font-size: 1.9rem;
+}
+
+
+
+.project-main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    
+}
+
+input, textarea, select {
+    padding: 0.8rem 1.4rem;
+    background-color: rgba(255, 255, 255, 0.178);
+    border-radius: 0.2rem;
+    resize: none;
+    color: white;
+    font-size: 1rem;
+    
+    
+    
+
+}
+.image-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image-project label {
+    margin-bottom: 0.5rem;
+}
+
+
+.input-file {
+    background-color: #222;
+    border-radius: 0.2rem;
+    resize: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 1rem;
+
+}
+
+select {
+    color: white;
+    background-color: #222;
+
+}
+
+
+label {
+    color: white;
+}
+.form-section small {
+    margin-top: 1rem;
+    display: block;
+    color: white;
+    font-size: 0.9rem;
+}
+
+
+.form-section small a {
+    color: rgb(255, 5, 113); 
+}
+
+
+
+.btn-submit{
+    display: inline-block;
+    width: fit-content;
+    padding: 0.5rem 0.8rem;
+    background-color: rgb(192, 16, 57); 
+    border-radius: 1.2rem;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 1rem;
+    
+}
+
+.btn-submit:hover {
+    background-color: rgb(130, 0, 0); 
+    transition: 300ms ease;
+}
+.project-main.inline {
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+/* View/Update Projects */
+
+
+.btn.sm {
+    padding: 0.3rem 0.7rem;
+    font-size: 0.8rem;
+}
+
+
+.btn.danger{
+    background-color: rgb(192, 16, 57); 
+}
+
+.sm:hover{
+    background-color: #ffffff;
+    color: black;
+    
+}
+
+
+.view-project-section{
+    margin-top: 4rem;
+    
+}
+
+.view-project-container{
+    display: grid;
+    grid-template-columns: 13rem auto;
+    gap: 2rem;
+    background-color: #0000005d;
+    padding: 3rem;
+    margin-bottom: 13em;
+    border-radius: 1.5rem;
+    
+    
+}
+
+
+
+.view-project-container h2{
+    padding: 0;
+    margin: 0 0 2rem 0;
+   line-height: 1;
+}
+
+main{
+    background-color: #5151515d;
+    padding: 3rem;
+    border-radius: 1rem;
+    
+}
+
+td{
+    color: white;
+    
+}
+th{
+    color: white;
+    
+}
+
+aside h5{
+    font-size: 1rem;
+   
+}
+
+.view-project-section aside a {
+    background-color: #6f6f6f5d;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1.6rem;
+    border-bottom: 1px solid black;
+    border-radius: 0.1rem;
+ 
+}
+
+
+.view-project-section aside li .add-project:hover{
+    background: #ffffff;
+    color: black;
+}
+.view-project-section aside li .add-project:hover h5 {
+    color: black;
+}
+
+.view-project-section aside a.active {
+    background-color: #2c2c2c69;
+}
+
+.view-project-section main {
+    margin-left: 1.5rem;
+    
+}
+
+
+.view-project-section main table {
+    width: 100%;
+    text-align: left;
+}
+
+.view-project-section main table th {
+    background-color: #6f6f6f5d;
+    padding: 0.6rem;
+    
+
+}
+
+.view-project-section main table td {
+    padding:  0.9rem;
+    border-bottom: 1px solid black;
+    
+
+}
+
+.view-project-section main table td {
+    padding:  0.8rem;
+    background: #4949495f;
+    
+}
+
+
+.view-project-section main table tr:hover td {
+    background-color: #2c2c2c69;
+    cursor: default;
+    transition: 300ms ease;
+    
+}
+
+
+
+.section-margin{
+    margin-top: 7rem;
+}
+
+.margin-project {
+    margin-top: 4.5rem;
+}
+
+
+
+
+
+
+
+/* Mobile Compatbility section (Media Queries) */
+
+
+@media screen and (max-width: 1024px) {
+.container{
+    width: 88%;
+}
+
+h2{
+    font-size: 1.8rem;
+}
+
+h3{
+    font-size: 1.2rem;
+}
+
+h5{
+    font-size: 0.8rem;
+}
+
+
+/* Navigation section */
+
+nav button{
+    display: inline-block;
+    font-size: 1.5rem;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+nav button#close-nav-icon {
+    display: none
+}
+.navbar-container {
+    position: relative;
+}
+
+.nav-menu{
+    position: absolute;
+    flex-direction: column;
+    top: 100%;
+    right: 0;
+    width: 12rem;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0;
+    display: none;
+}
+
+.nav-menu li{
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    background: white;
+    color: rgb(255, 255, 255);
+    box-shadow: -2rem 3rem 7rem rgba(0, 0, 0, 0.9)
+}
+
+.nav-menu a{
+    color:  black;
+
+}
+
+.nav-menu li a{
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.nav-profilepic{
+    background: grey;
+
+}
+
+.nav-profilepic .avatar{
+    margin-left: 2rem;
+    border: 0;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+
+.project-container{
+    gap: 2rem;
+}
+
+
+.projects-container{
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.footer-container{
+    grid-template-columns: 1fr 1fr;;
+}
+
+.search-bar-container {
+    width: 60%;
+}
+
+nav {
+  position: relative;
+
+}
+
+.project-detail-container h2{
+  text-align: left;
+}
+.project-detail-container{
+
+    padding: 1rem 1rem 2rem;
+ 
+
+}
+
+.form-section  h2 {
+   font-weight: bold;
+   font-size: 1.9rem;
+
+}
+
+
+/* View/Update Projects */
+
+.view-project-container {
+    grid-template-columns:  4rem auto;
+    padding: 0;
+    background: transparent;
+}
+
+.view-project-section h5 {
+    display: none;
+}
+
+
+
+.view-project-section main table td {
+    padding-right: 1.5rem;
+    border-bottom: 1px solid black;
+    
+
+}
+
+
+/* About Us Page */
+.about-us-section {
+    padding: 2rem;
+    margin: 2rem 5rem 5rem 5rem;
+    background-color: #4a4a4a5d;
+    border-radius: 1.5rem;
+    border:  2px solid;
+  }
+
+  
+.about-us-title {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    
+}
+
+.about-titles{
+    color: #9d00ff;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 3rem;
+}
+
+.about-title{
+    color: #9d00ff;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.about-us-title h1{
+    font-size: 3rem;
+    
+}
+
+.about-us-information {
+    width: 50%;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+@media screen and  (max-width: 600px){
+section{
+margin-top: 2rem;
+    
+}
+
+
+h1{
+font-size: 2rem;
+}
+
+.project-container {
+grid-template-columns: 1fr;
+gap: 0;
+}
+
+.projects-container{
+    grid-template-columns:  1fr;
+    gap: 3rem;
+}
+
+.projects-container {
+    grid-template-columns: 1fr;
+}
+
+.project-type{
+    font-size: 0.7rem;
+}
+
+.footer-container{
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+.search-bar-container {
+    width: 88%;
+}
+
+/* View/Update Projects */
+
+
+.view-project-section {
+    margin-top: 5rem;
+}
+
+.view-project-container {
+    grid-template-rows: 1fr;
+}
+
+.view-project-section main {
+    padding: 0.8rem;
+    
+}
+
+.view-project-section main table tr {
+    display: flex;
+    flex-direction: column;
+}
+
+.view-project-section main table thead {
+    display: none;
+}
+
+
+/* About Us Page */
+.about-us-section {
+    padding: 1rem;
+    margin: 2rem 2rem 2rem 2rem;
+    background-color: #4a4a4a5d;
+    border-radius: 1.5rem;
+    border:  2px solid;
+  }
+
+  
+.about-us-title {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    
+}
+
+.about-titles{
+    color: #9d00ff;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 3rem;
+}
+
+.about-title{
+    color: #9d00ff;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.about-us-title h1{
+    font-size: 3rem;
+    
+}
+
+.about-us-information {
+    width: 50%;
+}
+
+}
+
+
+
+
+
+
+
+@media screen and  (max-width: 320px){
+section{
+    margin-top: 1rem;
+        
+}
+    
+    
+h1{
+    font-size: 1rem;
+}
+
+.project-container {
+    grid-template-columns: 1fr;
+    gap: 0;
+}
+    
+.projects-container{
+    grid-template-columns:  1fr;
+    gap: 5rem;
+}
+    
+.project-container {
+    grid-template-columns: 1fr;
+}
+    
+.project-type{
+    font-size: 0.7rem; 
+}
+    
+.footer-container{
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.category__buttons-container{
+    grid-template-columns: 1fr;
+}
+
+.search-bar-container {
+    width: 80%;
+
+    }
+    
+    
+.form-section-container {
+    padding: 0;
+}
+    
+/* View/Update Projects */
+
+.view-project-section {
+    margin-top: 5rem;
+        
+}
+
+.view-project-section main table tr {
+    display: flex;
+    flex-direction: column;     
+}
+
+.view-project-section main {
+    padding: 0;
+    background: transparent;
+}
+    
+/* About Us Page */
+.about-us-section {
+    padding: 1rem;
+    margin: 1rem 1rem 5rem 1rem;
+    background-color: #4a4a4a5d;
+    border-radius: 1.5rem;
+    border:  2px solid;
+  }
+
+  
+.about-us-title {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    
+}
+
+.about-titles{
+    color: #9d00ff;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+}
+
+.about-title{
+    color: #9d00ff;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.about-us-title h1{
+    font-size: 3rem;
+    
+}
+
+.about-us-information {
+    width: 50%;
+}
+
+
+
+}
